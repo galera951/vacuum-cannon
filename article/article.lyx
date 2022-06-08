@@ -1,0 +1,253 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{lettrine}
+\usepackage{hyperref}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "libertine" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.6in
+\rightmargin 1.2in
+\bottommargin 1.6in
+\headheight 1.5in
+\headsep 0.3in
+\footskip 0.8in
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 1 2 6 -1
+\bullet 2 2 12 -1
+\bullet 3 1 25 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+\size huge
+Иследование и оптимизация конструкции
+\begin_inset Newline newline
+\end_inset
+
+вакуумной пушки
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\size huge
+
+\backslash
+date{ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+
+\shape italic
+Вопрос по выбору на экзамен по общей физике 
+\begin_inset Newline newline
+\end_inset
+
+(термодинамика и молекулярная физика)
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Захаров Алексей, Казиков Сергей, Луговцов Глеб
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Table of Contents
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Цель исследования
+\end_layout
+
+\begin_layout Standard
+Целью нашего является оптимизация конструкции вакуумной пушки, то есть нахождени
+е зависимости скорости, импульса и энергии снаряда от длины ствола.
+\end_layout
+
+\begin_layout Section
+Экспериментальная установка
+\end_layout
+
+\begin_layout Standard
+Вакуумная пушка представляет собой прямую трубу, в один из концов которой
+ мы кладём снаряд, затем закупориваем оба конца и откачиваем воздух.
+ Когда давление внутри будет около 1/50 атм, то мы нарушаем герметичность
+ трубы на том конце, где лежит снаряд и давление воздуха протлкивает его
+ с достаточно большой скоростью по направлению другого конца, вследствие
+ чего снаряд вылетает из трубы в препятствие, а мы можем зафиксировать его
+ скорость.
+\end_layout
+
+\begin_layout Section
+Экспериментальные данные
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\paragraph_spacing single
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "1"
+literal "true"
+
+\end_inset
+
+
+\size footnotesize
+Сивухин
+\end_layout
+
+\end_body
+\end_document
