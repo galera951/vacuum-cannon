@@ -9,6 +9,7 @@
 \usepackage{indentfirst}
 \usepackage{lettrine}
 \usepackage{hyperref}
+\usepackage{ upgreek }
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -295,6 +296,42 @@ p=0.015p_{0}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/photo3.jpg
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Фото установки
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Порядок действий и поведение пушки при выстреле:
 \end_layout
 
@@ -340,11 +377,12 @@ p=0.015p_{0}
 \begin_layout Standard
 Рассмотрим простейшую модель движения снаряда в пушке.
  Силы, действующие на снаряд изображены на рис.
- 2.
+ 3.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -402,9 +440,9 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 (p_{0}-p_{\text{тр}})S_{\text{сн}}-\mu mg=ma
-\]
+\end{equation}
 
 \end_inset
 
@@ -413,9 +451,9 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 v=\sqrt{2la}=\sqrt{2l\cdot(\dfrac{p_{0}-p_{\text{тр}}}{m}S_{\text{сн}}-\mu g)}
-\]
+\end{equation}
 
 \end_inset
 
@@ -560,12 +598,12 @@ Re=\dfrac{\rho vl}{\eta}\approx4\cdot10^{5}
 \begin_layout Standard
 Проведём серию опытов по определению скорости вылета снаряда из трубы.
  Установка для определения скорости изображена на рис.
- 3.
+ 4.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement t
 wide false
 sideways false
 status collapsed
@@ -575,7 +613,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename img/photo2.jpg
-	width 40text%
+	width 60text%
 
 \end_inset
 
@@ -604,14 +642,15 @@ status collapsed
 Скорость будем измерять с помощью скоростной съёмки.
  В сумме нами было проведено около 100 измерений, которые мы поместили на
  график в зависимости от длины трубки, которую мы постепенно укорачивали,
- отрезая небольшие куски:
+ отрезая небольшие куски (рис.
+ 5).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -630,7 +669,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename img/V-on-L.png
-	height 26theight%
+	height 30theight%
 
 \end_inset
 
@@ -668,7 +707,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename img/P-on-L.png
-	height 26theight%
+	height 30theight%
 
 \end_inset
 
@@ -706,7 +745,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename img/E-on-L.png
-	height 26theight%
+	height 30theight%
 
 \end_inset
 
@@ -749,8 +788,111 @@ status collapsed
 
 \end_layout
 
+\begin_layout Standard
+Так как количество измерений было невелико, а скорость измерялась с достаточно
+ большой точностью, то основной вклад в погрешность составла случайная ошибка.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S=\sqrt{\dfrac{\sum_{i=1}^{n}(x-\overline{x})^{2}}{n(n-1)}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+А погрешность измерения скорости составила около:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Updelta v\approx\dfrac{\Updelta l}{t}\approx5\text{ м/c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Так как время измерялось с точностью до микросекунд (
+\begin_inset Formula $\Updelta l\gg\Updelta t$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Высокую относительную погрешность мы объясняем малым количеством измерений
+ и неровностью поверхности трубы, из-за чего снаряд при, казалось бы, одинаковых
+ условиях вёл себя совершенно по-разному.
+\end_layout
+
 \begin_layout Section
 Сопоставление результатов и выводы
+\end_layout
+
+\begin_layout Standard
+Сопоставим теоретические результаты простейшей модели с экспериментальными
+ данными (рис.
+ 6).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/teorV-on-L.png
+	height 30theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Сравнение экспериментальной и теоретичексой кривых
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как и предполагалось, забегающий воздух значительно влияет на скорость вылетающе
+го снаряда.
+ Отсюда можно сделать вывод, что для оптимизации конструкции пушки нужно
+ уменьшить зазор между снарядом и трубой, при этом не сильно увеличив силу
+ трения.
+\end_layout
+
+\begin_layout Section
+Приложение
 \end_layout
 
 \begin_layout Standard
@@ -782,6 +924,20 @@ literal "true"
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-1"
+
+\end_inset
+
+ Б.
+ А.
+ Изотов.
+ Расчёт и построение профиля сопла Лаваля.
+ – http://elib.osu.ru/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
 
 \end_inset
 

@@ -279,7 +279,7 @@ status collapsed
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p=0.015p_{0}
+p_{\text{тр}}=0.015p_{0}
 \]
 
 \end_inset
@@ -305,7 +305,7 @@ status collapsed
 \noindent
 \align center
 \begin_inset Graphics
-	filename img/photo3.jpg
+	filename img/photo_ust.jpg
 	width 60text%
 
 \end_inset
@@ -838,7 +838,318 @@ S=\sqrt{\dfrac{\sum_{i=1}^{n}(x-\overline{x})^{2}}{n(n-1)}}
 \end_layout
 
 \begin_layout Standard
+Сопоставим теоретические результаты простейшей модели с экспериментальными
+ данными (рис.
+ 6).
+\end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/teorV-on-L.png
+	height 30theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Сравнение экспериментальной и теоретичексой кривых
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как и предполагалось, забегающий воздух значительно влияет на скорость вылетающе
+го снаряда.
+ Отсюда можно сделать вывод, что для оптимизации конструкции пушки нужно
+ уменьшить зазор между снарядом и трубой, при этом не сильно увеличив силу
+ трения.
+\end_layout
+
+\begin_layout Standard
+Из графиков зависимости скорости, импульса и энергии для лёгкого и средного
+ снарядов 
+\begin_inset Formula $m_{\text{л}}=8.6\text{ гр}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{\text{ср}}=8.6\text{ гр}$
+\end_inset
+
+ можно сделать вывод, что начиная с длины 
+\begin_inset Formula $l_{max}\approx3.4\text{ м}$
+\end_inset
+
+ эти величины выходят 
+\begin_inset Quotes rld
+\end_inset
+
+на плато
+\begin_inset Quotes rrd
+\end_inset
+
+, то есть оптимальная длина пушки будет равна 
+\begin_inset Formula $l_{\text{опт}}^{\text{л+ср}}=l_{max}=3.4\text{ м}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для тяжёлого снаряда 
+\begin_inset Formula $m_{\text{т}}=8.6\text{ гр}$
+\end_inset
+
+можно предположить, что из-за большей инертности относительно других снарядов
+ его скорость в среднем меньше, значит, перед ним успевает набежать больше
+ воздуха и критическое давление достигается раньше.
+ В связи с этим разрыв скотча происходит раньше, поэтому сила со стороны
+ выхода будет меньше, и из-за чего ему удаётся потерять меньше импульса.
+\end_layout
+
+\begin_layout Section
+Приложение
+\end_layout
+
+\begin_layout Standard
+Для увеличения скорости снаряда мы придумали несколько способов оптимизации
+ конструкции пушки.
+\end_layout
+
+\begin_layout Subsection
+Баллон с дополнительным давлением
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/photo3.jpg
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Заполнение баллона воздухом
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Как следует из простейшей модели, чем больше входное давление, тем большую
+ скорость разовьёт снаряд.
+ Поэтому мы подключили баллон, в который накачали повышенное давление 
+\begin_inset Formula $p_{\text{б}}=5p_{0}$
+\end_inset
+
+ и замерили выходную скорость снаряда массой 
+\begin_inset Formula $m=10.4\text{ гр}$
+\end_inset
+
+.
+ Оказалось, что с дополнительным давлением скорость, энергия и импульс составили
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{\text{б}}=93.1\dfrac{\text{м}}{\text{с}}=1.77v_{max}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\text{б}}=0.97\dfrac{\text{кг\cdotм}}{\text{с}}=2.14p_{max}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{\text{б}}^{\text{кин}}=45.07\text{ Дж}=3.78E_{max}^{\text{кин}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Здесь же мы сравниваем полученные значения с максимальной скоростью, импульсом
+ и энергией самого тяжёлого снаряда массой 
+\begin_inset Formula $m_{\text{т}}=8.6\text{ гр}$
+\end_inset
+
+.
+ Видно, что дополнительное давление действительно дало хороший результат.
+\end_layout
+
+\begin_layout Subsection
+Сопло Лаваля
+\end_layout
+
+\begin_layout Standard
+Анализ течения газа по каналам переменного сечения показывает, что скорость
+ газа больше скорости звука может быть получена в комбинированном сопле,
+ состоящем из суживающейся и расширяющейся частей.
+ Такое сопло и называется соплом Лаваля.
+ Схема сопла изображена на рис.
+ 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/laval.png
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Общий вид сопла Лаваля
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Теоретический предел скорости снаряда равен скорости звука в воздухе.
+ Для превышения этого предела, можно поставить на вход сопло Лаваля, на
+ выходе которого воздух будет иметь скорость больше скорости звука, а значит,
+ возрастёт и скорость снаряда.
+\end_layout
+
+\begin_layout Standard
+Суживающаяся часть сопла Лаваля (между сечениями 1-1 и k-k) работает в области
+ дозвуковых скоростей (
+\begin_inset Formula $M<1$
+\end_inset
+
+), а расширяющаяся - в области сверхзвуковых скоростей (
+\begin_inset Formula $M>1$
+\end_inset
+
+), где 
+\begin_inset Formula $M$
+\end_inset
+
+– число Маха.
+ Переход потока из области дозвуковых скоростей в сверхзвуковой поток происходит
+ в наименьшем (критическом) сечении сопла, в котором скорость потока равна
+ местной скорости звука.
+\end_layout
+
+\begin_layout Standard
+Закон изменения площади 
+\begin_inset Formula $F$
+\end_inset
+
+ канала с геометрическим воздействием на поток газа и связь его с законом
+ изменения скорости потока 
+\begin_inset Formula $W$
+\end_inset
+
+ можно получить из уравнения адиабаты, закона сохранения массы и уравнения
+ Бернулли.
+ В этом случае уравнение имеет вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{dF}{F}=\dfrac{dW}{W}\cdot(M^{2}-1)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где  - площадь поперечного канала, м 2 ; W - скорость потока газа, м/с;
+ M - число Маха (безразмерная скорость потока газа).
+ Если перепад давления недостаточен, то в минимальном сечении канала не
+ будет достигаться критическая скорость - Wкр = αкр .
+ В этом случае поток, не достигая скорости звука в критическом сечении,
+ не переходит в сверхзвуковой и расширяющаяся часть канала работает, как
+ диффузор, то есть в ней происходит торможение потока вместо разгона.
+ Что и было в нашем случае.
 \end_layout
 
 \begin_layout Standard
@@ -849,17 +1160,13 @@ S=\sqrt{\dfrac{\sum_{i=1}^{n}(x-\overline{x})^{2}}{n(n-1)}}
 \end_layout
 
 \begin_layout Bibliography
-\paragraph_spacing single
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "1"
-literal "true"
+key "key-1"
 
 \end_inset
 
-
-\size footnotesize
-Д.В.
+ Д.В.
  Сивухин.
  Общий курс физики.
  Термодинамика и молекулярная физика.
@@ -869,11 +1176,28 @@ literal "true"
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
+key "key-4"
 
 \end_inset
 
+ Б.
+ А.
+ Изотов.
+ Расчёт и построение профиля сопла Лаваля.
+ – http://elib.osu.ru/
+\end_layout
 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ Н.
+ А.
+ Кириченко.
+ Термодинамика, статистическая молекулярная физика.
 \end_layout
 
 \end_body
