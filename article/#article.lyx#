@@ -1,0 +1,586 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{lettrine}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "libertine" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1.6in
+\rightmargin 1.2in
+\bottommargin 1.6in
+\headheight 1.5in
+\headsep 0.3in
+\footskip 0.8in
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip bigskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style russian
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 1 2 6 -1
+\bullet 2 2 12 -1
+\bullet 3 1 25 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+\size huge
+Иследование и оптимизация конструкции
+\begin_inset Newline newline
+\end_inset
+
+вакуумной пушки
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+
+\shape italic
+Вопрос по выбору на экзамен по общей физике 
+\begin_inset Newline newline
+\end_inset
+
+(термодинамика и молекулярная физика)
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Захаров Алексей, Казиков Сергей, Луговцов Глеб
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Table of Contents
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Цель исследования
+\end_layout
+
+\begin_layout Standard
+Целью исследования является нахождение теоретической зависимости скорости
+ снаряда от его массы и длины пушки и сопоставление этой зависимости с экспериме
+нтальными данными.
+\end_layout
+
+\begin_layout Section
+Экспериментальная установка
+\end_layout
+
+\begin_layout Standard
+Наша экспериментальная установка состоит из полипропиленовой трубы с начальной
+ длиной 
+\begin_inset Formula $4$
+\end_inset
+
+м и внутренним радиусом 
+\begin_inset Formula $20.7$
+\end_inset
+
+мм, нескольких снарядов, массы которых равны 
+\begin_inset Formula $4.3,5.7,8.6$
+\end_inset
+
+грамм соответственно и вакуумного насоса.
+ Схема экспериментальной установки изображена на рис.
+ 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/scheme.png
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Схема работы экспериментальной установки
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Каждый раз при выстреле будем откачивать трубку до возможного минимума давления.
+ Найдём 
+\begin_inset Formula $\text{p}$
+\end_inset
+
+экспериментальным путём, подключив манометр к трубе и зафиксируем 
+\begin_inset Formula $t_{\text{уст}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=0.015p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $t_{\text{уст}}=60\text{ с}$
+\end_inset
+
+– время установления давления.
+\end_layout
+
+\begin_layout Standard
+Порядок действий и поведение пушки при выстреле:
+\end_layout
+
+\begin_layout Enumerate
+Герметично заклеиваем скотчем оба конца трубы;
+\end_layout
+
+\begin_layout Enumerate
+Начинаем откачку воздуха вакуумным насосом;
+\end_layout
+
+\begin_layout Enumerate
+После истечения времени установления 
+\begin_inset Formula $t_{\text{уст}}$
+\end_inset
+
+производим резкую разгерметизацию того конца трубы, в котором находится
+ снаряд;
+\end_layout
+
+\begin_layout Enumerate
+В результате этого за счёт резкого перепада давления снаряд разгоняется
+ входящим потоком воздуха до определённой скорости, зависимость которой
+ от длины трубы мы и попытаемся найти далее.
+\end_layout
+
+\begin_layout Section
+Теоретические подходы
+\end_layout
+
+\begin_layout Standard
+Для описания процессов, происходящих в пушке во время выстрела, мы будем
+ использовать несколько теоретических подходов, которые отличаются приближённост
+ью к реальных условиям.
+ В результате мы сможем сравнить эти подходы с экспериментальными данными
+ и найти оптимальный из них.
+\end_layout
+
+\begin_layout Subsection
+Простейшая модель
+\end_layout
+
+\begin_layout Standard
+Рассмотрим простейшую модель движения снаряда в пушке.
+ Силы, действующие на снаряд изображены на рис.
+ 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/first.png
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Простейшая модель
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Для определения коэффициента трения между снарядом и трубой проведём ряд
+ опытов и определим угол, при котором снаряд начинает скатываться по пушке.
+ Тогда:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=\tan\alpha=0.238
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из Второго закона Ньютона и формул кинематики:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(p_{0}-p_{\text{тр}})S_{\text{сн}}-\mu mg=ma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v=\sqrt{2la}=\sqrt{2l\cdot(\dfrac{p_{0}-p_{\text{тр}}}{m}S_{\text{сн}}-\mu g)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+получили зависимость скорости от длины трубы.
+\end_layout
+
+\begin_layout Subsection
+Вклад других факторов
+\end_layout
+
+\begin_layout Standard
+В реальности же эта модель очень слабо приближает нас к эксперименту, так
+ как мы не учитываем 
+\shape italic
+давление, создаваемое воздухом, 
+\begin_inset Quotes rld
+\end_inset
+
+забегающим
+\begin_inset Quotes rrd
+\end_inset
+
+ вперёд
+\shape default
+ снаряда, которое оказывает действительно значительный вклад в изменение
+ скорости снаряда и
+\shape italic
+ трение снаряда о воздух
+\shape default
+.
+ Экспериментально удалось выяснить, что в какой-то момент после выстрела
+ давление перед снарядом оказывается настолько большим, что разрывает скотч
+ на противополжном конце трубы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\text{кр}}=1.8\text{ атм}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+– из эксперимента.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим вклад каждого из вышупомянутых параметров:
+\end_layout
+
+\begin_layout Subsubsection
+Давление забегающего вперёд воздуха
+\end_layout
+
+\begin_layout Standard
+Для свободного перемещения снаряда по трубе, его диаметр немного отличается
+ от внутреннего диаметра трубы.
+ Из-за этого между снарядом и стенками трубы образуется небольшой зазор,
+ площадь которого равна:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{\text{з}}=S_{\text{тр}}-S_{\text{сн}}\approx28.6\text{ мм}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из-за разности давлений между воздухом перед снарядом и после снаряда, часть
+ воздуха будет 
+\begin_inset Quotes rld
+\end_inset
+
+забегать
+\begin_inset Quotes rrd
+\end_inset
+
+ вперёд снаряда через эту площадь.
+ Таким образом по мере движения снаряда в трубе, давление перед снарядом
+ будет возрастать от 
+\begin_inset Formula $p_{\text{тр}}$
+\end_inset
+
+до 
+\begin_inset Formula $p_{\text{кр}}>p_{0}$
+\end_inset
+
+.
+ Значит, ускорение снаряда будет уменьшатся по некоторому закону 
+\begin_inset Formula $a=a(t)$
+\end_inset
+
+, то есть реальная скорость будет меньше, чем мы получили в первой оценке.
+\end_layout
+
+\begin_layout Subsubsection
+Трение снаряда о воздух
+\end_layout
+
+\begin_layout Standard
+Оценим трение снаряда о воздух, используя число Рейнольдса 
+\begin_inset Formula $Re$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Re=\dfrac{\rho vl}{\eta}\approx4\cdot10^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+очевидно, течение турбулентное.
+ Отсюда следует, что силы вязкого трения пренебрежимо малы, значит, в дальнеших
+ оценках мы не будем их учитывать.
+\end_layout
+
+\begin_layout Section
+Экспериментальные данные
+\end_layout
+
+\begin_layout Section
+Сопоставление результатов и выводы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\paragraph_spacing single
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "1"
+literal "true"
+
+\end_inset
+
+
+\size footnotesize
+Сивухин
+\end_layout
+
+\end_body
+\end_document
