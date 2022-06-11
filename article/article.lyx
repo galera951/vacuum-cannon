@@ -500,7 +500,7 @@ v=\sqrt{2la}=\sqrt{2l\cdot(\dfrac{p_{0}-p_{\text{тр}}}{m}S_{\text{сн}}-\mu g
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p_{\text{кр}}=1.8\text{ атм}
+p_{\text{кр}}=2.8\text{ атм}
 \]
 
 \end_inset
@@ -607,7 +607,7 @@ Re=\dfrac{\rho vl}{\eta}\approx4\cdot10^{5}
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
+placement H
 wide false
 sideways false
 status collapsed
@@ -617,7 +617,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename img/photo2.jpg
-	width 60text%
+	width 50text%
 
 \end_inset
 
@@ -794,7 +794,8 @@ status collapsed
 
 \begin_layout Standard
 Так как количество измерений было невелико, а скорость измерялась с достаточно
- большой точностью, то основной вклад в погрешность составла случайная ошибка.
+ большой точностью, то основной вклад в погрешность составила случайная
+ ошибка.
 \end_layout
 
 \begin_layout Standard
